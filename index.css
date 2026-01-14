@@ -1,3 +1,82 @@
-.body{
-    
+* {
+  /* padding-left: 100px; */
+  font-size: 20px;
+}
+
+/* .secondDiv {
+  height: 50px;
+  width: 100px;
+  background: yellow;
+}
+
+#thirdDiv{
+    height: 75px;
+  width: 150px;
+  background: blue;
+}
+
+div{
+    margin-top: 10px;
+} */
+
+#pTag {
+  color: black;
+  background-color: red;
+  /* text-align: justify;
+
+  text-decoration: line-through;
+  font-size: 200px;
+  font-weight: lighter;
+  text-shadow: 15px 2px 5px rgb(149, 149, 255); */
+}
+
+/* #pTag {
+  color: chocolate;
+  color: rgb(255, 100, 0);
+  color: #532771;
+} */
+
+.parentDiv {
+  height: 250px;
+  width: 100%;
+  background-color: gray;
+  /* margin: 50px; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+}
+/* margin padding border */
+
+/* px % em rem vh vw */
+.childDiv {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  /* margin-top: 20px; */
+  /* border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-radius: 100%; */
+}
+
+/* flex */
+
+/* .parentDiv { */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* justify-items: center; */
+  /* align-content: flex-start;
+  align-items: flex-start; */
+
+  /* display: grid;
+  grid-template-columns: repeat(3, 50px); 
+  grid-template-rows:repeat(3, 50px); */
+/* } */
+
+
+@media screen and (min-width:1000px) {
+  #pTag{
+  color: blue;
+  background-color: white;
+
+  }
+  
 }
