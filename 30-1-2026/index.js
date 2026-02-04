@@ -1,6 +1,6 @@
 // map filter rduce
 
-// let arr = ["Sagar Vedpathak", "Sakshi Vhargar", "Vaibhav Bhoi", "Yash Holkar"];
+let arr = ["Sagar Vedpathak", "Sakshi Vhargar", "Vaibhav Bhoi", "Yash Holkar"];
 
 // {
 //     fname:"",
@@ -9,16 +9,16 @@
 
 // return new array, itrate on evey element of array, requrid a return
 
-// let modifiedArr = arr.map((element, inedx, array) => {
-//   let fLName = element.split(" ");
-//   return {
-//     fname: fLName[0],
-//     lname: fLName[1],
-//   };
+let modifiedArr = arr.map((element, inedx, array) => {
+  let fLName = element.split(" ");
+  return {
+    fname: fLName[0],
+    lname: fLName[1],
+  };
 
-//   // console.log(element)
-// });
-// console.log(modifiedArr);
+  // console.log(element)
+});
+console.log(modifiedArr);
 
 // arr = [
 //   "Sagar Vedpathak",
@@ -81,7 +81,7 @@
 
 // a,b , c, d ..., z
 
-let arr = ["abc", [1, 2], 10, { name: "yash" }];
+// let arr = ["abc", [1, 2], 10, { name: "yash" }];
 // ref / addre
 // spread oprator
 // let newArr = [...arr];
@@ -93,20 +93,20 @@ let arr = ["abc", [1, 2], 10, { name: "yash" }];
 
 // console.log(arr);
 
-arr = ["abc", [1, 2], 10, { name: "yash" }];
+// arr = ["abc", [1, 2], 10, { name: "yash" }];
 //strigify and parse
 // console.log(typeof arr)
 // let newArr = arr
 // console.log(arr == newArr)
 
-let newArr = JSON.parse(JSON.stringify(arr))
+// let newArr = JSON.parse(JSON.stringify(arr))
 
 
-newArr[1].push(30)
-newArr[3].name = "Sakshi"
+// newArr[1].push(30)
+// newArr[3].name = "Sakshi"
 
-console.log(newArr)
-console.log(arr)
+// console.log(newArr)
+// console.log(arr)
 
 
 
