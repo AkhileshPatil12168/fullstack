@@ -1,0 +1,5 @@
+create all http methods
+test all methods with data 
+try to get data from apis
+try to perform Crud (create, read, update, delete) on dummy data
+read more about http status codes....
