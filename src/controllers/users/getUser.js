@@ -17,7 +17,7 @@ const getUser = async (req, res) => {
     const userData = await userModel.findOne({
       _id: pathParams?.userId,
       isDeleted: false,
-    });
+    }).populate({path: "address"});
 
     if(!userData)  return res
       .status(400)
