@@ -5,11 +5,9 @@ const updateUser = async (req, res) => {
     const pathParams = req.params;
     const body = req.body;
 
-    const updatedData = await userModel.findByIdAndUpdate(
-      pathParams.userId,
-      body,
-      { returnDocument: "before" },
-    );
+    const updatedData = await userModel
+      .findByIdAndUpdate(pathParams.userId, body, { returnDocument: "after" })
+      .select({ password: 0, updatedAt: 0, createdAt: 0 });
 
     return res
       .status(200)

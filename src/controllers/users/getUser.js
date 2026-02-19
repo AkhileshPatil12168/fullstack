@@ -14,14 +14,16 @@ const getUsers = async (req, res) => {
 const getUser = async (req, res) => {
   try {
     const pathParams = req.params;
-    const userData = await userModel.findOne({
-      _id: pathParams?.userId,
-      isDeleted: false,
-    }).populate({path: "address"});
 
-    if(!userData)  return res
-      .status(400)
-      .send({ status: false, message: "user not found" });
+    const userData = await userModel
+      .findOne({
+        _id: pathParams?.userId,
+        isDeleted: false,
+      })
+      .populate({ path: "address" });
+
+    if (!userData)
+      return res.status(400).send({ status: false, message: "user not found" });
     return res
       .status(200)
       .send({ status: true, message: "user found", userData });
