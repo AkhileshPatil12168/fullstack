@@ -9,6 +9,9 @@ const loginUser = require("../controllers/users/loginUser");
 const authorization = require("../middleware/authorization");
 
 const Router = express();
+Router.get("/",(req, res)=>{
+    res.send("hello")
+})
 
 Router.post("/create/user", createUser);
 Router.get("/users", getUsers);
