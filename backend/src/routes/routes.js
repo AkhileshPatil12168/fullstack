@@ -15,7 +15,7 @@ Router.get("/",(req, res)=>{
 
 Router.post("/create/user", createUser);
 Router.get("/users", getUsers);
-Router.get("/user/:userId", authorization, getUser);
+Router.get("/user/:userId", getUser);
 Router.put("/user/:userId", authorization, updateUser);
 Router.delete("/user/:userId", authorization, deleteUser);
 
