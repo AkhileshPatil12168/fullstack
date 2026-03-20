@@ -3,6 +3,7 @@ import Button from "./Button";
 import Test from "./Test";
 import ApiTest from "./ApiTest";
 import PostData from "./PostData";
+import Login from "./Login";
 
 function App() {
   let a = 10;
@@ -12,23 +13,9 @@ function App() {
   const decreseB = () => setB(b - 1);
   return (
     <div className="min-h-screen">
-      <h1 className="text-4xl font-bold bg-gray-500">hello react...</h1>
-      <Test />
-      <p>{a}</p>
-      <button
-        onClick={() => {
-          a = a + 1;
-          console.log(a);
-        }}
-        className="mb-10"
-      >
-        click me for a
-      </button>
+      {/* <Test /> */}
 
-      <p>{b}</p>
-      <button onClick={increseB}>click me for b+</button>
-      <br />
-      <button onClick={decreseB}>click me for b-</button>
+      <Login/>
 
       <PostData callApi={increseB} />
       <ApiTest b={b} />
