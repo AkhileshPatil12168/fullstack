@@ -22,7 +22,7 @@ const features = [
 function HomePage() {
   return (
     <div className="grid gap-8">
-      <section className="grid gap-6 rounded-[2rem] bg-slate-900 px-8 py-10 text-white shadow-[0_25px_100px_rgba(15,23,42,0.35)] md:grid-cols-[1.5fr_1fr]">
+      <section className="grid gap-6 rounded-[2rem] bg-cyan-900 px-8 py-10 text-white shadow-[0_25px_100px_rgba(15,23,42,0.35)] md:grid-cols-[1.5fr_1fr]">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-teal-300">
             Project Overview
